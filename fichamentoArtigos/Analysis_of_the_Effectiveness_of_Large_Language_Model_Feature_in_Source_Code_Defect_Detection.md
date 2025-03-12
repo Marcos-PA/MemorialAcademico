@@ -14,6 +14,9 @@ embora ainda existam desafios relacionados ao contexto e à complexidade dos err
 
 * **Uso de LLMs na detecção de defeitos**: A saída dos modelos de linguagem pode ser utilizada como característica adicional em modelos de aprendizado de máquina para aumentar a precisão na identificação de defeitos (página 2).
 * **Técnicas de _prompting_ analisadas**: O estudo compara _zero-shot_, _few-shot_ e _Chain-of-Thought prompting_, sendo que o _few-shot_ apresentou os melhores resultados (página 5).
+* **zero-shot**: refere-se à capacidade de um grande modelo de linguagem de concluir uma tarefa específica sem ter visto nenhum dado relacionado a essa tarefa anteriormente.
+* **few-shot**: O prompt de poucos disparos pode melhorar o desempenho ao fornecer exemplos de demonstração dentro dos prompts para aprendizagem de contexto.
+* **Chain-of-Thought**: é um método que incentiva grandes modelos de linguagem a explicar seus processos de raciocínio. Ele auxilia na compreensão e avaliação das capacidades e limitações do modelo
 * **Resultados experimentais**: A introdução de características dos LLMs melhorou significativamente a detecção de erros como ordem de parâmetros, erros em operadores binários e uso incorreto de operadores (página 6).
 * **Impacto do _prompting_**: Modelos que receberam exemplos durante o _prompting_ foram mais eficazes na predição de defeitos do que aqueles submetidos a _zero-shot prompting_ (página 7).
 * **Sugestões para pesquisas futuras**: Investigar defeitos mais complexos que exigem análise contextual profunda e avaliar o desempenho de LLMs especializados em código-fonte (página 8).
