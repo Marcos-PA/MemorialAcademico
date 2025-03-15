@@ -4,10 +4,37 @@ Niu, Changan; Zhang, Ting; Li, Chuanyi; Luo, Bin; Ng, Vincent. "On Evaluating th
 [10.1145/3650105.3652295](https://doi.org/10.1145/3650105.3652295)
 
 ## 1. Fichamento de Conteúdo
+O artigo investiga a eficiência do código gerado por Modelos de Linguagem de Grande Escala (LLMs). Os autores avaliam a execução do código gerado em benchmarks como HumanEval, MBPP e um conjunto de problemas do LeetCode. O estudo busca responder duas perguntas principais:
 
-O artigo investiga a eficiência do código gerado por Modelos de Linguagem de Grande Escala (LLMs), indo além da mera avaliação de correção. Para isso, os autores realizam experimentos utilizando benchmarks como HumanEval, MBPP e um conjunto de problemas do LeetCode.
-As métricas analisadas incluem tempo de execução e a taxa de aceitação dos códigos gerados. Além disso, o estudo explora diferentes técnicas de _prompting_ para otimizar a eficiência dos códigos gerados, demonstrando que abordagens em múltiplas etapas melhoram os resultados.
-Os achados sugerem que a eficiência do código não está diretamente relacionada ao tamanho do modelo ou à taxa de acerto inicial. Como contribuição, os autores propõem um novo benchmark baseado no LeetCode e discutem estratégias para guiar LLMs na geração de código mais eficiente.
+1. Quão eficiente é o código gerado por LLMs?
+2. Como melhorar a eficiência do código gerado por LLMs via *prompting*?
+
+Para responder à primeira questão, os autores comparam o tempo de execução dos códigos gerados por diferentes modelos (GPT-4, GPT-3.5, Code Llama, WizardCoder, DeepSeek Coder, entre outros). Os resultados mostram que a correlação entre a taxa de sucesso na geração de código correto e sua eficiência não é direta. Por exemplo, um modelo pode produzir mais soluções corretas, mas com menor eficiência computacional.
+
+Na segunda parte do estudo, os pesquisadores exploram três técnicas de *prompting* para melhorar a eficiência do código gerado. As abordagens incluem:
+- Pedido direto para otimização.
+- Pedido para otimização após a geração inicial do código.
+- Pedido para uma estratégia de otimização antes da geração otimizada.
+
+Os resultados mostram que a abordagem em etapas (“Chain-of-Thought”) melhora significativamente a eficiência, especialmente em problemas mais complexos.
+
+## 2. Fichamento Bibliográfico
+
+* **Modelos Avaliados**: Foram testados GPT-4, GPT-3.5, Phi-2, Code Llama (7B, 13B, 34B), WizardCoder (7B, 13B, 34B) e DeepSeek Coder (33B Base e Instruct) (página 104).
+* **Chain-of-Thought (CoT)** prompting: Induz o LLM a explicar seu raciocínio passo a passo, resultando em previsões mais interpretáveis.
+* **Eficiência dos Modelos**: Em benchmarks como HumanEval e MBPP, DeepSeek Coder 33B Instruct teve a menor latência, enquanto GPT-4 apresentou maior eficiência em LeetCodeEval (página 105).
+* **Impacto do *Prompting***: As técnicas de *prompting* melhoraram a eficiência em até 18% no LeetCodeEval (página 106).
+* **Complexidade Computacional**: A eficiência do código varia conforme o problema, com modelos treinados para otimização gerando soluções melhores (página 106).
+
+### Tabela Comparativa de Eficiência
+
+| Modelo | HumanEval Runtime | MBPP Runtime | LeetCodeEval Easy | LeetCodeEval Medium |
+|--------|-------------------|--------------|-------------------|---------------------|
+| GPT-4  | 8.61              | 9.14         | 30.89             | 50.92               |
+| GPT-3.5 | 8.35              | 8.86         | 33.80             | -                   |
+| DeepSeek Coder 33B | 7.54 | 8.93 | 35.30 | 49.08 |
+
+
 
 ## 2. Fichamento Bibliográfico
 
@@ -24,3 +51,7 @@ Os achados sugerem que a eficiência do código não está diretamente relaciona
 * _"Step-by-step prompting could make LLMs generate more efficient code, especially on complex problems."_
 * _"We propose a LeetCode-based benchmark which provides a reference point for comparing the correctness and efficiency of more complex code."_
 * _"Training strategy and data have an impact on the efficiency of the generated code."_
+
+
+
+
