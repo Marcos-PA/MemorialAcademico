@@ -56,6 +56,5 @@ A metodologia seguiu as seguintes etapas:
 * _"Propomos o refinamento dos *benchmarks* para incluir soluções diversificadas de *API* e melhorar a representação semântica dos *prompts* para aumentar a precisão do código gerado."_ (página 8)
 * _"A redundância na geração de código permanece um problema crítico que exige estratégias específicas para mitigação."_ (página 8)
 
-Este fichamento fornece um resumo detalhado do artigo, enfatizando a metodologia dos experimentos e os principais resultados quantitativos obtidos.
 
 
