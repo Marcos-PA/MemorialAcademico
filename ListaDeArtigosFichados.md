@@ -1,7 +1,7 @@
 # Lista de Artigos Selecionados para o TCC
 
 ## 1. Introdução
-Esta lista contém os artigos selecionados para embasar o desenvolvimento do Trabalho de Conclusão de Curso (TCC).
+Esta lista contém os artigos selecionados para fichamento do Trabalho de Conclusão de Curso (TCC).
 
 ## 2. Artigos Selecionados
 
