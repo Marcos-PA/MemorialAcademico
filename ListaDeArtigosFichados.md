@@ -1,4 +1,4 @@
-# Lista de Artigos Selecionados para o TCC
+# Lista de Artigos Fichados para o TCC
 
 ## 1. Introdução
 Esta lista contém os artigos selecionados para fichamento do Trabalho de Conclusão de Curso (TCC).
@@ -23,6 +23,4 @@ Reddy, G. Pradeep; Kumar, Y. V. Pavan; Prakash, K. Purna. "Hallucinations in Lar
 ### 2.6. Artigo 6
 Lian, Xiaoli; Wang, Shuaisong; Ma, Jieping; Tan, Xin; Liu, Fang; Shi, Lin; Zhang, Li; Gao, Cuiyun. "Imperfect Code Generation: Uncovering Weaknesses in Automatic Code Generation by Large Language Models," in 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion ’24), April 14–20, 2024, Lisbon, Portugal. ACM. doi:  [10.1145/3639478.3643081](https://doi.org/10.1145/3639478.3643081)
 
-## 3. Considerações Finais
-Esta seleção de artigos fornecerá o embasamento teórico necessário para a construção do TCC, garantindo a fundamentação das hipóteses e metodologia adotadas.
 
